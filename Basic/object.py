@@ -37,4 +37,4 @@ C = item("windows",300,10)
 # A.price = 500		  # chance not work cause using decorator PROPERTY
 # print(A.price)
 
-print(A.price)
+print(A.total)

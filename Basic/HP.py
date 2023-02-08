@@ -5,6 +5,7 @@ class HP(item):
 
     # Example polymorphisme
     hp_total = []
+    discount  = 0.1
     
     def __init__(self, name: str, price: float, quantity=0,broken=0):
         
@@ -24,7 +25,7 @@ class HP(item):
         self.hp_total.append(self)
 
 
-# Inheritance principle
-# buy = HP("IOS", 300, 2)
-# buy.Discount()
-# print(buy.price)
+#Inheritance principle
+buy = HP("IOS", 300, 2)
+buy.Discount()
+print(buy.price)

@@ -2,7 +2,7 @@ import csv
 
 class item:
 
-    discount  = 0.2  # 20%
+    discount  = 0.5  # 20%
     total = []
 
     def __init__(self, name: str, price: float, quantity=0):   # quan=0 mean we can empty quan while calling this class
