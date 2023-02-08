@@ -1,5 +1,7 @@
-def cek(string):
-	if string == "test":
-		return 10
+nama = input("Enter your name ? ")
 
-cek("test")
+if len(nama) > 5:
+	raise Exception("Too long bitch, delete that name MF !!!")
+
+print("Nice name bradah !")
+
