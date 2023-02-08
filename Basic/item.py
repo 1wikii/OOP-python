@@ -15,7 +15,7 @@ class item:
         # Assign to self
         print(f"Product name : {name}")     
 
-        self.__name = name          # double underscore on name, mencegah attribute name tidak keluar scope kelas
+        self.__name = name          # double underscore on name mean this attribute is private
         self.__price = price
         self.quantity = quantity
 
@@ -76,7 +76,7 @@ class item:
     def __send(self):
         pass
 
-    def __connect(self, smtp_server):
+    def __connect(self, smtp_server: float):
         pass
 
     def __prepare_body(self):
@@ -112,3 +112,4 @@ class item:
 
 # Polymorphisme : Jumlah item (total) dan jumlah HP rusak (hp_total) adalah contoh
 #                 method sama calculate_total tpi beda value sesuai objek
+

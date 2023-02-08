@@ -2,7 +2,7 @@ from item import item
 from HP import HP
 
 
-A = item("android",100,10)
+A = item("android","sepuluh",10)
 B = HP("linux",200,10)
 C = item("windows",300,10)
 
@@ -36,3 +36,5 @@ C = item("windows",300,10)
 # print(A.name)
 # A.price = 500		  # chance not work cause using decorator PROPERTY
 # print(A.price)
+
+print(A.price)
