@@ -47,7 +47,7 @@ class Dragon (Player):
             print("Defeated")
 
 
-def game_loop():
+def game_start():
 
     play, health = True, 100 
     player_name = input("Enter your name : ")
@@ -68,4 +68,4 @@ def game_loop():
 
 
 print("Welcome to Dragom Slayer\n------------------------")
-game_loop()
+game_start()
