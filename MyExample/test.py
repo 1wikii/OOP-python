@@ -16,8 +16,27 @@ import random
 
 # main()
 
-# def random():
-# 	word = "aabbaa"
-# 	print(word.replace("a","x",2))
 
-# random()
+# class basing:
+# 	coba = ["daris","ganteng"]
+# 	def __init__ (self,nama):
+# 		self.nama = nama 
+
+# 	def named(self):
+# 		return True
+
+# 	def panggil(self):
+# 		if self.named():
+# 			print("jasdi")
+# 		else:
+# 			print("gajdai")
+
+	
+
+
+# def main():
+# 	aku = basing("jajal")
+
+# 	aku.panggil()
+
+# main()
