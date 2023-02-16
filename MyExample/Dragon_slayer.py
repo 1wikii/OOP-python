@@ -46,7 +46,6 @@ class Dragon (Player):
         if not player.is_alive():
             print("Defeated")
 
-
 def game_start():
 
     play, health = True, 100 

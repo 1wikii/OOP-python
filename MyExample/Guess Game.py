@@ -3,7 +3,7 @@ import random
 class Game:
     def __init__(self, player):
         self.player = player
-        self.random_number = random.randint(1, 100)
+        self.random_number = random.randint(1, 10)
         self.player_guesses = []
 
     def play(self):
