@@ -8,12 +8,21 @@ class question:
 		self.name = name 
 		self.health = health
 
+	def is_alive(self):
+		return self.health > 0
+
+	def q_len(self):
+		return question.number < len(question.word)
+
+	def check(self,answer=""):
+		return answer == question.word[question.number]
+
 	def start(self):
 
-		while question.number < len(question.word) and self.health > 0:
+		while self.q_len() and self.is_alive():
 
-			loop = False
-			while not loop and self.health > 0:
+			while self.is_alive():
+
 				print(f"Player : {self.name}",end=f"   Health : {self.health}\n")
 				number = question.number
 				word_raw = question.word[number]
@@ -31,8 +40,8 @@ class question:
 
 				if self.check(answer):
 					print("\nJawaban Benar!")
-					loop = True
 					input()
+					break
 				else:
 					print("\nJawaban Salah!")
 					self.health -= 1
@@ -46,12 +55,7 @@ class question:
 		else:
 			print("Selamat anda menang!")
 
-	def check(self,answer=""):
 
-		if answer == question.word[question.number]:
-			return True
-		else:
-			return False
 
 def main():
 	health  = 3
