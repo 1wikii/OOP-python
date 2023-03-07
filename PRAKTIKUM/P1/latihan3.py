@@ -39,9 +39,14 @@ def palidrome(word:str):
             return False    
     return True
 
-kata = input("Kata ? ")
 
-if palidrome(kata):
-    print("Benar")
-else:
-    print("Salah")
+def main():
+
+    kata = input("Kata ? ")
+
+    if palidrome(kata):
+        print("Benar")
+    else:
+        print("Salah")
+    main()
+main()
