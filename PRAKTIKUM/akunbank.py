@@ -1,29 +1,5 @@
 
 
-# class bank:
-# 	no_rek = []
-# 	def __init__(self,nama, nomor):
-# 		self.nama = nama
-# 		self.nomor = nomor
-# 		bank.no_rek.append(self.nama)
-# 		bank.no_rek.append(self.nomor)
-
-# 	def transfer(self, no_tujuan):
-# 		for no in range(len(bank.no_rek)):
-# 			if bank.no_rek[no] == no_tujuan:
-# 				print(f"Transfer Dari {self.nama} ke {bank.no_rek[no-1]}")
-
-
-# orang1 = bank("orang1","123")
-# orang2 = bank("orang2","111")
-# orang3 = bank("orang3","222")
-
-# orang1.transfer("222")
-# orang3.transfer("111")
-
-# print(bank.no_rek)
-
-
 class akunbank:
     list_pelanggan = []         # row untuk setiap akun, isi row 0 no, 1 nama, 2 saldo
     def __init__(self,no , nama , saldo):
@@ -52,8 +28,8 @@ class akunbank:
     def transfer(self,penerima="obj",jumlah=-1):
     
         if jumlah == -1:
-            tujuan = input('Nomor rekening tujuan : ')
         
+            tujuan = input('Nomor rekening tujuan : ')
             for akun in akunbank.list_pelanggan:
                 if str(akun[0]) == tujuan:
                     return akun[1]
@@ -80,10 +56,13 @@ def transaksi():
         kamu.tarik_tunai()
         transaksi()
     elif pil == '3':
-        if kamu.transfer() == "ukraina":
+        org = kamu.transfer()
+
+        if org == "ukraina":
             kamu.transfer(penerima=ukraina,jumlah=int(input('jumlah : ')))
             print("saldo penerima :",ukraina.lihat_saldo())
-        elif kamu.transfer() == "elon musk":
+
+        elif org == "elon musk":
             kamu.transfer(penerima=elon,jumlah=int(input('jumlah : ')))
             print("saldo penerima :",elon.lihat_saldo())
             
@@ -94,7 +73,6 @@ def transaksi():
     
 transaksi()
         
-    
         
         
-        
+

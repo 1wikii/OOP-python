@@ -113,15 +113,15 @@ class item:
 # Polymorphisme : Jumlah item (total) dan jumlah HP rusak (hp_total) adalah contoh
 #                 method sama calculate_total tpi beda value sesuai objek
 
-user = item("budi",10,2)
-user = item("bud",10,2)
-user = item("budis",10,2)
+# user = item("budi",10,2)
+# user = item("bud",10,2)
+# user = item("budis",10,2)
 
-chance = ["asu",20]
+# chance = ["asu",20]
 
-for i in item.total:
-    if i == "bud":
-        i = chance
+# for i in item.total:
+#     if i == "bud":
+#         i = chance
 
-print(item.total)
+# print(item.total)
 

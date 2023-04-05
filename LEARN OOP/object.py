@@ -2,7 +2,7 @@ from item import item
 from HP import HP
 
 
-A = item("android","sepuluh",10)
+A = item("android",100,10)
 B = HP("linux",200,10)
 C = item("windows",300,10)
 
