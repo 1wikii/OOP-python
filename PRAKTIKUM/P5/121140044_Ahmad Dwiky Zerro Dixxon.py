@@ -50,8 +50,8 @@ objek = [
 		retiree("dharmawanti",14,"wanita", 10000),
 		]
 
-for idx in range(len(objek)):
-	objek[idx].calculate_income_tax()
+for idx in objek:
+	idx.calculate_income_tax()
 
 print("\nAmount of Income = ",overloading(
 										objek[0].income,
