@@ -17,6 +17,6 @@ class buku:
 		return f" {self.pengarang} => '{self.nama}' | Terbit : {self.terbit} | Rp. {self.harga} |""\n"
 
 	def DISKON(self):
-		self.harga = self.harga* self.__class__name.diskon
+		self.harga = self.harga*buku.diskon
 		buku.bayar += self.harga
 		
